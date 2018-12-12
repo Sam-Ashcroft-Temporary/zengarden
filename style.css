@@ -1,0 +1,29 @@
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    grid-template-rows: 40em, 40em;
+    padding: 10px;
+    grid-template-areas: 
+    "header sidebar"
+    "box1 box2"
+    "box3 box4"
+    "box5 box6"
+    "footer1"
+    "footer2"
+  }
+  .page-wrapper>section>header {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding:20px 0;
+    font-size: 30px;
+    grid-area: header;
+  }
+  .page-wrapper#viewall {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding:20px 0;
+    font-size: 30px;
+    grid-area: sidebar;
+  }
